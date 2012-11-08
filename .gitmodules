@@ -1,3 +1,42 @@
 [submodule "Vendor/Opauth"]
 	path = Vendor/Opauth
 	url = git://github.com/uzyn/opauth.git
+[submodule "Strategy/Bitbucket"]
+	path = Strategy/Bitbucket
+	url = https://github.com/fancyguy/opauth-bitbucket.git
+[submodule "Strategy/Facebook"]
+	path = Strategy/Facebook
+	url = https://github.com/uzyn/opauth-facebook.git
+[submodule "Strategy/Flickr"]
+	path = Strategy/Flickr
+	url = https://github.com/pocket7878/opauth-flickr.git
+[submodule "Strategy/Google"]
+	path = Strategy/Google
+	url = https://github.com/uzyn/opauth-google.git
+[submodule "Strategy/Github"]
+	path = Strategy/Github
+	url = https://github.com/uzyn/opauth-github.git
+[submodule "Strategy/Foursquare"]
+	path = Strategy/Foursquare
+	url = https://github.com/pocket7878/opauth-foursquare.git
+[submodule "Strategy/Instagram"]
+	path = Strategy/Instagram
+	url = https://github.com/muhdazrain/opauth-instagram.git
+[submodule "Strategy/LinkedIn"]
+	path = Strategy/LinkedIn
+	url = https://github.com/uzyn/opauth-linkedin.git
+[submodule "Strategy/Live"]
+	path = Strategy/Live
+	url = https://github.com/uzyn/opauth-live.git
+[submodule "Strategy/Mixi"]
+	path = Strategy/Mixi
+	url = https://github.com/ritou/opauth-mixi.git
+[submodule "Strategy/SinaWeibo"]
+	path = Strategy/SinaWeibo
+	url = https://github.com/dgrabla/opauth-sinaweibo.git
+[submodule "Strategy/OpenID"]
+	path = Strategy/OpenID
+	url = https://github.com/uzyn/opauth-openid.git
+[submodule "Strategy/Twitter"]
+	path = Strategy/Twitter
+	url = https://github.com/uzyn/opauth-twitter.git
