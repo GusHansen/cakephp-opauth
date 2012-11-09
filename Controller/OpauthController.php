@@ -11,15 +11,12 @@ class OpauthController extends OpauthAppController {
 				'Opauth.Strategy.%s', 
 				$strategy
 			));
-			$auth = array_merge(
-				array('token' => $data['credentials']['token']), 
-				$auth
-			);
-			if (!empty($data['credentials']['secret'])) {
-				$auth['token_secret'] = $data['credentials']['secret'];
-			}
-			if (!empty($data['credentials']['refresh_token'])) {
-				$auth['refresh_token'] = $data['credentials']['refresh_token'];
+			foreach ($data['credentials'] as $key => $value) {
+				$auth_keys = array_keys($auth);
+				if (in_array($key, $auth_keys)) {
+					$key .= '2';
+				}
+				$auth[$key] = $value;
 			}
 
 			// writing into session
