@@ -9,6 +9,9 @@ class OpauthSetting extends AppModel {
 	);
 
 	public $hasMany = array(
-		'Opauth.OpauthSettingExpanded'
+		'OpauthSettingExpanded' => array(
+			'className' => 'Opauth.OpauthSettingExpanded',
+			'dependent' => true
+		)
 	);
 }
