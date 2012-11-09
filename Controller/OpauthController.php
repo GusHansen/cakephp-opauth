@@ -7,18 +7,17 @@ class OpauthController extends OpauthAppController {
 		if ($this->data['validated']) {
 			$data = $this->data['auth'];
 			$strategy = $data['provider'];
-			$auth = array(
-				'key' => Configure::read(sprintf(
-					'Opauth.Strategy.%s.key', 
-					$strategy
-				)),
-				'secret' => Configure::read(sprintf(
-					'Opauth.Strategy.%s.secret', 
-					$strategy
-				)),
-				'token' => $data['credentials']['token'],
-				'token_secret' => $data['credentials']['secret'],
+			$auth = Configure::read(sprintf(
+				'Opauth.Strategy.%s', 
+				$strategy
+			));
+			$auth = array_merge(
+				array('token' => $data['credentials']['token']), 
+				$auth
 			);
+			if (!empty($data['credentials']['secret'])) {
+				$auth['token_secret'] = $data['credentials']['secret'];
+			}
 			if (!empty($data['credentials']['refresh_token'])) {
 				$auth['refresh_token'] = $data['credentials']['refresh_token'];
 			}
