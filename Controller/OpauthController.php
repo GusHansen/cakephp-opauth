@@ -5,6 +5,9 @@ class OpauthController extends OpauthAppController {
 
 	public function opauth_complete() {
 		if ($this->data['validated']) {
+			// clearing cache
+			Cache::clear();
+
 			$data = $this->data['auth'];
 			$strategy = $data['provider'];
 			$auth = Configure::read(sprintf(
