@@ -1,6 +1,6 @@
 [submodule "Vendor/Opauth"]
 	path = Vendor/Opauth
-	url = git://github.com/uzyn/opauth.git
+	url = https://github.com/uzyn/opauth.git
 [submodule "Strategy/Bitbucket"]
 	path = Strategy/Bitbucket
 	url = https://github.com/fancyguy/opauth-bitbucket.git
