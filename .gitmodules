@@ -40,3 +40,6 @@
 [submodule "Strategy/Twitter"]
 	path = Strategy/Twitter
 	url = https://github.com/uzyn/opauth-twitter.git
+[submodule "Strategy/Vimeo"]
+	path = Strategy/Vimeo
+	url = https://github.com/LubosRemplik/opauth-vimeo.git
