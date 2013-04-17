@@ -15,7 +15,9 @@
 	"require": {
 		"php": ">=5.2.0",
 		"composer/installers": "*",
-		"opauth/opauth": ">=0.2.0"
+		"opauth/opauth": ">=0.2.0",
+		"opauth/facebook": "dev-wip/1.0",
+		"cakephp/debug_kit": "2.2.*@dev"
 	},
 	"suggest": {
 		"opauth/facebook": "Allows Facebook authentication",
