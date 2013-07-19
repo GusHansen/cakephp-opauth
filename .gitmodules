@@ -43,3 +43,6 @@
 [submodule "Strategy/Vimeo"]
 	path = Strategy/Vimeo
 	url = https://github.com/LubosRemplik/opauth-vimeo.git
+[submodule "Strategy/Behance"]
+	path = Strategy/Behance
+	url = https://github.com/markusbegiebing/opauth-behance.git
