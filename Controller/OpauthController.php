@@ -50,7 +50,23 @@ class OpauthController extends OpauthAppController {
 				));
 				return $this->redirect($redirect);
 			}
-			debug($this->data);
+		}
+		
+		if (isset($this->data['error'])) {
+			$data = $this->data['error'];
+			$strategy = $data['provider'];
+			$redirect = Configure::read(sprintf(
+				'Opauth.Strategy.%s.redirect', 
+				$strategy
+			));
+			if ($redirect) {
+				$this->Session->setFlash(__(
+					'%s: %s',
+					$strategy,
+					$data['message']
+				));
+				return $this->redirect($redirect);
+			}
 		}
 	}
 
