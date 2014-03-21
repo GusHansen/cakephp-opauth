@@ -12,24 +12,25 @@ CakePHP v2.x
 Opauth >= v0.2 _(submoduled with this package)_
 [Expandable](https://github.com/LubosRemplik/CakePHP-Expandable-Plugin)
 
-How to use
-----------
-1. Install this plugin for your CakePHP app.   
-   Assuming `APP` is the directory where your CakePHP app resides, it's usually `app/` from the base of CakePHP.
+Installation
+------------
+1.	Use [composer](https://getcomposer.org/doc/00-intro.md). 
+	Add following to the `composer.json` file:
 
-   ```bash
-   cd APP/Plugin
-   git clone git://github.com/uzyn/cakephp-opauth.git Opauth
-   ```
+		"require": {
+			"lubos/cakephp-opauth": "~1.0"
+		}
 
-2. Download Opauth library as a submodule.
+	And run `php composer.phar update`
+
+1. Download Opauth library as a submodule.
 
    ```bash
    git submodule init
    git submodule update
    ```
 
-3. Add this line to the bottom of your app's `Config/bootstrap.php`:
+1. Add this line to the bottom of your app's `Config/bootstrap.php`:
 
    ```php
    <?php
@@ -37,7 +38,7 @@ How to use
    ```
    Overwrite any Opauth configurations you want after the above line.
 
-4. Load [strategies](https://github.com/uzyn/opauth/wiki/list-of-strategies) onto `Strategy/` directory.
+1. Load [strategies](https://github.com/uzyn/opauth/wiki/list-of-strategies) onto `Strategy/` directory.
 
    Append configuration for strategies at your app's `Config/bootstrap.php` as follows:
    ```php
@@ -52,9 +53,9 @@ How to use
    ));
    ```
 
-5. Go to `http://path_to_your_cake_app/auth/facebook` to authenticate with Facebook, and similarly for other strategies that you have loaded.
+1. Go to `http://path_to_your_cake_app/auth/facebook` to authenticate with Facebook, and similarly for other strategies that you have loaded.
 
-6. After validateion you will be redirected to Opauth.Strategy.Facebook.redirect url
+1. After validateion you will be redirected to Opauth.Strategy.Facebook.redirect url
 
 ### Note:
 If your CakePHP app **does not** reside at DocumentRoot (eg. `http://localhost`), but at a directory below DocumentRoot (eg. `http://localhost/your-cake-app`),  
