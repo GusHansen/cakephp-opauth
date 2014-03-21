@@ -18,7 +18,7 @@ Installation
 	Add following to the `composer.json` file:
 
 		"require": {
-			"lubos/cakephp-opauth": "~1.0"
+			"lubos/opauth": "~1.0"
 		}
 
 	And run `php composer.phar update`

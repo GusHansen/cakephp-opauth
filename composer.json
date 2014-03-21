@@ -1,11 +1,11 @@
 {
-	"name": "lubos/cakephp-opauth",
+	"name": "lubos/opauth",
 	"description": "CakePHP Opauth plugin",
 	"type": "cakephp-plugin",
 	"require": {
 		"cakephp/cakephp": "~2.0",
 		"composer/installers": "~1.0",
-		"lubos/cakephp-expandable": "~1.0",
+		"lubos/expandable": "~1.0",
 		"php": ">=5.2.8"
 	}
 }
